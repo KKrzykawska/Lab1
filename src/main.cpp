@@ -6,12 +6,14 @@
 #endif
 
 
-int main()
+int main(int argc, char *argv[])
 {
+
+double degree = atof(argv[1]);
 #ifdef USE_TRIGONOMETRY_DEGREE
-std::cout<<degreemath::sin(30);
+std::cout<<degreemath::sin(degree);
 #else
-std::cout<<std::sin(30.0);
+std::cout<<std::sin(degree);
 #endif
 return 0;
 
